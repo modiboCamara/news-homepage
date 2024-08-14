@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* Basic Styling */
+      .menu {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        background-color: #1f77b4; /* Adjusted to match the blue tone */
+      }
+
+      .menu-item {
+        position: relative;
+      }
+
+      .menu-item > a {
+        color: white;
+        padding: 15px 20px;
+        display: block;
+        text-decoration: none;
+      }
+
+      .menu-item:hover > a {
+        background-color: #1665a6; /* Darker shade of blue */
+      }
+
+      /* Submenu Styling */
+      .submenu {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        background-color: #e0e0e0; /* Light gray background for submenu */
+        display: none;
+        min-width: 200px;
+        border-radius: 4px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .submenu li {
+        padding: 10px;
+      }
+
+      .submenu li a {
+        color: #333;
+        text-decoration: none;
+        display: block;
+        padding: 10px;
+      }
+
+      .submenu li a:hover {
+        background-color: #d5d5d5; /* Darker gray on hover */
+      }
+
+      /* Show submenu on hover */
+      .menu-item:hover .submenu {
+        display: block;
+        z-index: 100;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul class="menu">
+        <li class="menu-item">
+          <a href="#">Plateforme</a>
+          <ul class="submenu">
+            <li><a href="#">Objectifs</a></li>
+            <li><a href="#">Partenaires</a></li>
+            <li><a href="#">Résultats clés</a></li>
+          </ul>
+        </li>
+        <li class="menu-item">
+          <a href="#">Opportunités de financement durable</a>
+          <ul class="submenu">
+            <li><a href="#">Climat</a></li>
+            <li><a href="#">Biodiversité</a></li>
+            <li><a href="#">Restauration des terres</a></li>
+          </ul>
+        </li>
+        <li class="menu-item">
+          <a href="#">Expert en finance durable</a>
+          <ul class="submenu">
+            <li><a href="#">Agriculture durable</a></li>
+            <li><a href="#">Énergie durable</a></li>
+            <li><a href="#">Transport et mobilité durable</a></li>
+            <li><a href="#">Eau</a></li>
+            <li><a href="#">Gestion des déchets</a></li>
+            <li><a href="#">Tourisme durable</a></li>
+          </ul>
+        </li>
+        <li class="menu-item">
+          <a href="#">Portefeuille de projets</a>
+          <ul class="submenu">
+            <li><a href="#">Agriculture durable</a></li>
+            <li><a href="#">Énergie durable</a></li>
+            <li><a href="#">Transport et mobilité durable</a></li>
+            <li><a href="#">Eau</a></li>
+            <li><a href="#">Gestion des déchets</a></li>
+            <li><a href="#">Tourisme durable</a></li>
+          </ul>
+        </li>
+        <li class="menu-item">
+          <a href="#">Publications en finance durable</a>
+          <ul class="submenu">
+            <li><a href="#">Manuels de formation</a></li>
+            <li><a href="#">Boîtes à outils</a></li>
+          </ul>
+        </li>
+        <li class="menu-item"><a href="#">Actualités</a></li>
+        <li class="menu-item"><a href="#">Statistiques clés</a></li>
+        <li class="menu-item"><a href="#">Carte des pays accompagnés</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>
